@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
@@ -20,6 +20,7 @@ def home():
     if form.validate_on_submit():
         task = form.tasks.data
         tasks_list.append(task)
+        return redirect(url_for('home'))
     return render_template('index.html', form=form, tasks=tasks_list)
 
 

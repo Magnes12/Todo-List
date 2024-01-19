@@ -34,15 +34,6 @@ ul {
     padding: 0;
 }
 
-.task-checkbox {
-    margin-right: 10px;
-}
-
-.task-checkbox:checked {
-    background-color: #e0e0e0;
-    text-decoration: line-through;
-}
-
 li {
     background-color: #007bff;
     border: 1px solid #ccc;
@@ -52,3 +43,14 @@ li {
     display: flex;
     align-items: center;
 }
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  input[type="checkbox"]:checked + label {
+    text-decoration:line-through;
+    margin-bottom: 0;
+  }
