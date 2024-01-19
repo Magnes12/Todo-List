@@ -18,9 +18,6 @@ header h1 {
     margin-bottom: 5px;
 }
 
-header p {
-    color: #555;
-}
 
 main section {
     margin-bottom: 30px;
@@ -32,33 +29,26 @@ h2 {
     margin-bottom: 10px;
 }
 
-form {
-    display: flex;
-    gap: 10px;
-}
-
-input, button {
-    padding: 8px;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
 }
 
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.task-checkbox:checked {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+}
+
 li {
+    background-color: #007bff;
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 5px 0;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
